@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let testScore = parseFloat(prompt('Nhập điểm kiểm tra: '));
+    let midScore = parseFloat(prompt('Nhập điểm thi giữa kì: '));
+    let finalScore = parseFloat(prompt('Nhập điểm thi cuối kì: '));
+    let calcScore = (testScore + midScore + finalScore) / 3;
+
+    if (calcScore >= 8) {
+        alert('Học tốt');
+    } else if (calcScore < 8 && calcScore >= 6) {
+        alert('Học bình thường');
+    } else {
+        alert('Học dốt');
+    }
+</script>
+</html>

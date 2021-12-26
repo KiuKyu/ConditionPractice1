@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>Expected Revenue : 10.000 USD</p>
+</body>
+<script>
+    let revenue = parseFloat(prompt('Revenue this month: '));
+    let rose = '';
+
+    if (revenue >= 9000) {
+        alert('Tiền hoa hồng tháng này là: ' + revenue * 0.05);
+    } else if (revenue < 6000 && revenue >= 3000) {
+        alert('Tiền hoa hồng tháng này là: ' + revenue * 0.01);
+    } else {
+        alert('Còn cái nịt');
+    }
+</script>
+</html>
